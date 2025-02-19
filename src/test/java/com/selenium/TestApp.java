@@ -132,7 +132,7 @@ public class TestApp {
             WebElement SelectCountry = driver.findElement(By.xpath("//android.widget.TextView[@text = 'Bangladesh]"));
             SelectCountry.click();
             System.out.println("SelectCountry - Passed");
-            Thread.sleep(1000);
+            Thread.sleep(4000);
 
         } catch (Exception e) {
             System.out.println("SelectCountry - Failed");
@@ -233,6 +233,45 @@ public class TestApp {
                 "new UiScrollable(new UiSelector().scrollable(true)).scrollBackward().scrollIntoView(new UiSelector().text(\"Air Jordan 9 Retro\"))"
         ));
         Thread.sleep(5000);
+
+        //Air Jordan 9 Retro
+        try {
+            WebElement Jordan9 = driver.findElement(By.xpath("//android.widget.TextView[@text='Air Jordan 9 Retro']/following-sibling::android.widget.LinearLayout/android.widget.TextView[@text='ADD TO CART']\n"));
+            Jordan9.click();
+            System.out.println("Air Jordan 9 Retro - Passed");
+            Thread.sleep(1000);
+
+        } catch (Exception e) {
+            System.out.println("Air Jordan 9 Retro- Failed");
+        }
+
+        //Jordan Lift Off
+        try {
+            WebElement Jordan9 = driver.findElement(By.xpath("//android.widget.TextView[@text='Jordan Lift Off']/following-sibling::android.widget.LinearLayout/android.widget.TextView[@text='ADD TO CART']\n"));
+            Jordan9.click();
+            System.out.println("Jordan Lift Off - Passed");
+            Thread.sleep(1000);
+
+        } catch (Exception e) {
+            System.out.println("Jordan Lift Off- Failed");
+        }
+
+        //Jordan Lift Off
+        try {
+            WebElement Jordan6 = driver.findElement(By.xpath("//android.widget.TextView[@text='Jordan 6 Rings']/following-sibling::android.widget.LinearLayout/android.widget.TextView[@text='ADD TO CART']\n"));
+            Jordan6.click();
+            System.out.println("Jordan 6 Rings - Passed");
+            Thread.sleep(3000);
+
+        } catch (Exception e) {
+            System.out.println("Jordan 6 Rings- Failed");
+        }
+
+// Scroll backward from "Air Jordan 9 Retro" to "Air Jordan 1 Mid SE"
+//        driver.findElement(AppiumBy.androidUIAutomator(
+//                "new UiScrollable(new UiSelector().scrollable(true)).scrollBackward().scrollIntoView(new UiSelector().text(\"Nike Blazer Mid '77\"))"
+//        ));
+//        Thread.sleep(3000);
 
 //        driver.findElement(AppiumBy.androidUIAutomator(
 //                "new UiScrollable(new UiSelector().scrollable(true).instance(0))" +
