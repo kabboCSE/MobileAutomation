@@ -243,9 +243,9 @@ public void sampleTest() throws InterruptedException {
         Thread.sleep(2000);
         text .sendKeys("TEST COMPLETE" + Keys.ENTER);
         Thread.sleep(4000);
-        System.out.println("Air Jordan 1 Mid SE - Passed");
+        System.out.println("search - Passed");
     } catch (Exception e) {
-        System.out.println("Air Jordan 1 Mid SE - Failed");
+        System.out.println("search - Failed");
     }
 }
 
